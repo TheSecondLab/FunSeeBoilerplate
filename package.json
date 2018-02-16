@@ -17,5 +17,8 @@
     "url": "https://github.com/TheSecondLab/FunSeeBoilerplate/issues"
   },
   "homepage": "https://github.com/TheSecondLab/FunSeeBoilerplate#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^3.11.0"
+  }
 }
