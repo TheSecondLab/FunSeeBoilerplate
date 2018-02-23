@@ -13,15 +13,15 @@ function getExternals() {
 
 const test = () => {
   const obj = getExternals();
-  obj['any-promise'] = 'commonjs any-promise'
+  obj['any-promise'] = 'commonjs any-promise';
 
   return obj;
-}
+};
 
 module.exports = {
   entry: './server/server.js',
   output: {
-    path: path.resolve(__dirname,'../dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: 'bundle.js'
   },
   target: 'node',

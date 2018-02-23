@@ -1,1 +1,1 @@
-module.exports = {test: '123'}
+module.exports = { test: '123' };

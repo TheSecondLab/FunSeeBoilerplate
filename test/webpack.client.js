@@ -1,9 +1,9 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   entry: './test.js',
   output: {
-    path: path.resolve(__dirname,'../dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: 'test.js'
   },
   module: {
@@ -18,4 +18,4 @@ module.exports = {
       }
     }]
   }
-}
+};
