@@ -4,7 +4,8 @@
   "description": "FunSeeBoilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "funsee-hammer dev funsee.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,18 @@
     "url": "https://github.com/TheSecondLab/FunSeeBoilerplate/issues"
   },
   "homepage": "https://github.com/TheSecondLab/FunSeeBoilerplate#readme",
-  "dependencies": {},
+  "dependencies": {
+    "funsee": "0.0.3",
+    "funsee-hammer": "^1.0.13"
+  },
   "devDependencies": {
-    "webpack": "^3.11.0"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
   }
 }
