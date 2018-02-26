@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const App = () => (
+const Module2 = () => (
   <div>
     hellow M2
   </div>
 );
 
-export default App;
+export default Module2;
