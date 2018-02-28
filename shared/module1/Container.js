@@ -10,7 +10,8 @@ const Module1 = (props) => (
 );
 
 export default connect(state => {
+  console.log(state);
   return {
-    test: state.text
+    test: state.module.module1.text
   };
 })(Module1);
