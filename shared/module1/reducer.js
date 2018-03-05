@@ -1,4 +1,4 @@
-import { ADD_TODO, COMPONENT_ZX_ACTION } from './action';
+import { ADD_TODO, COMPONENT_ZX_ACTION_SUCCESS } from './action';
 
 export default function (state = { text: 'test text1' }, action) {
   switch (action.type) {
@@ -7,7 +7,7 @@ export default function (state = { text: 'test text1' }, action) {
         // ...state,
         text: action.payload
       };
-    case COMPONENT_ZX_ACTION:
+    case COMPONENT_ZX_ACTION_SUCCESS:
       return {
         // ...state,
         zxText: action.payload

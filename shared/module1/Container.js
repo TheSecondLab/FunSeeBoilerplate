@@ -1,11 +1,16 @@
 import React, { Component as C } from 'react';
 import connect from '../../../FunSee/lib/tool/connector';
 
+// import * as saga from './saga';
 import * as actions from './action';
 
 class Module1 extends C {
-  static good() {
-    console.log('fighting');
+  static pageInit() {
+    return () => actions.zxAction(123);
+  }
+
+  componentDidMount() {
+    this.props.zxTest();
   }
 
   render() {
@@ -18,10 +23,10 @@ class Module1 extends C {
     );
   }
 }
+Module1.pageTitle = '测试页面';
 
-export default connect((state) => {
-  console.log(state);
-  return {
-    test: state.module.module1.text
-  };
+export default connect(state => ({
+  test: state.module.module1.zxText
+}), {
+  zxTest: actions.zxAction
 })(Module1);
