@@ -3,7 +3,7 @@ import React from 'react';
 
 const Module2 = () => (
   <div>
-    hellow M2
+    hellow M2 {global.test}222
   </div>
 );
 

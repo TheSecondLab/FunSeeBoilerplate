@@ -1,6 +1,6 @@
 // import Comp from './Container';
 
-export default {
+module.exports = {
   containers: [{
     tablename: 'module1',
     component: './Container.js'

@@ -16,4 +16,4 @@ const testRouter = router => ([
   router.get('/good', 'test.test1')
 ]);
 
-export default testRouter;
+module.exports = testRouter;

@@ -3,4 +3,4 @@ const testRouter = router => ([
   router.post('/god')
 ]);
 
-export default testRouter;
+module.exports = testRouter;

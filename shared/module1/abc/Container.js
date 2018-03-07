@@ -1,5 +1,6 @@
 import React from 'react';
-import connect from '../../../../FunSee/lib/tool/connector';
+// import connect from '../../../../FunSee/lib/tool/connector';
+// import {connector} from 'funsee';
 import { TODO_ACTION3 } from './action';
 
 const fn = () => {
@@ -14,11 +15,12 @@ const Module1 = props => (
   </div>
 );
 
-export default connect((state) => {
-  console.log(state);
-  return {
-    test: state.module.module1_abc.text
-  };
-}, {
-  TODO_ACTION3
-})(Module1);
+// export default connector((state) => {
+//   console.log(state);
+//   return {
+//     test: state.module.module1_abc.text
+//   };
+// }, {
+//   TODO_ACTION3
+// })(Module1);
+export default Module1;
