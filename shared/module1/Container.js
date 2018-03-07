@@ -1,19 +1,32 @@
-import React from 'react';
-// import connect from '../../../FunSee/lib/tool/connector';
+import React, { Component as C } from 'react';
+import connect from '../../../FunSee/lib/tool/connector';
 
+// import * as saga from './saga';
+import * as actions from './action';
 
-const Module1 = (props) => (
-  <div>
-    hellow 1112223
-    {props.test}
-  </div>
-);
+class Module1 extends C {
+  static pageInit() {
+    return () => actions.zxAction(123);
+  }
 
-// export default connect(state => {
-//   console.log(state);
-//   return {
-//     test: state.module.module1.text
-//   };
-// })(Module1);
+  componentDidMount() {
+    this.props.zxTest();
+  }
 
-export default Module1
+  render() {
+    const { props } = this;
+    return (
+      <div>
+        hellow 1112223
+        {props.test}
+      </div>
+    );
+  }
+}
+Module1.pageTitle = '测试页面';
+
+export default connect(state => ({
+  test: state.module.module1.zxText
+}), {
+  zxTest: actions.zxAction
+})(Module1);
