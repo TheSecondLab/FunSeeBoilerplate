@@ -1,5 +1,9 @@
 import React, { Component as C } from 'react';
+<<<<<<< HEAD
 import connect from '../common/connector';
+=======
+import connect from 'funsee/connect';
+>>>>>>> 033ac905ccc62eab1f69e4156acfa8befa7e00ec
 
 // import * as saga from './saga';
 import * as actions from './action';
