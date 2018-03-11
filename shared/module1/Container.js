@@ -1,5 +1,5 @@
 import React, { Component as C } from 'react';
-import connect from '../../../FunSee/lib/tool/connector';
+import connect from '../common/connector';
 
 // import * as saga from './saga';
 import * as actions from './action';
