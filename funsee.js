@@ -1,5 +1,5 @@
 // const {FunSee} = require('../FunSee');
-const {FunSee} = require('funsee');
+const { FunSee } = require('funsee');
 
 // const app = new FunSee();
 
