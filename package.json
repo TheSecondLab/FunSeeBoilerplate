@@ -25,7 +25,6 @@
     "funsee": "^1.0.3",
     "funsee-hammer": "^1.0.27",
     "react": "^16.2.0",
-    "react-redux": "^5.0.7",
     "redux-saga": "^0.16.0"
   },
   "devDependencies": {
