@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/TheSecondLab/FunSeeBoilerplate#readme",
   "dependencies": {
-    "antd": "^3.3.0",
     "funsee": "^1.1.0",
     "funsee-hammer": "^1.1.1",
     "moment": "^2.21.0",

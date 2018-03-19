@@ -1,6 +1,5 @@
 import React, { Component as C } from 'react';
 import connect from 'funsee/connect';
-import { Button } from 'antd';
 import * as actions from './action';
 import * as commonAction from '../../common/action';
 
@@ -21,7 +20,6 @@ class Module1 extends C {
       <div>
         hellow 1112223
         {props.test}
-        <Button type='primary'>按钮</Button>
       </div>
     );
   }
