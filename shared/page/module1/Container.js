@@ -2,6 +2,7 @@ import React, { Component as C } from 'react';
 import connect from 'funsee/connect';
 import * as actions from './action';
 import * as commonAction from '../../common/action';
+import * as style from './style.scss';
 
 class Module1 extends C {
   static pageInit() {
@@ -13,13 +14,19 @@ class Module1 extends C {
     this.props.loadEnv();
   }
 
+  onclick() {
+    this.props.history.push('/module2');
+  }
+
   render() {
     const { props } = this;
     console.log(props);
     return (
       <div>
         hellow 1112223
-        {props.test}
+        <div className={style.great} onClick={this.onclick.bind(this)}>
+          {props.test}
+        </div>
       </div>
     );
   }

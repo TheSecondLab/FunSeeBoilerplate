@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/TheSecondLab/FunSeeBoilerplate#readme",
   "dependencies": {
-    "funsee": "^1.2.0",
-    "funsee-hammer": "^1.1.1",
+    "funsee": "^1.3.0",
+    "funsee-hammer": "^1.2.1",
     "moment": "^2.21.0",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
