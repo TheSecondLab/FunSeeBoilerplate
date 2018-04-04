@@ -1,26 +1,25 @@
 import React from 'react';
-import { object, func } from 'prop-types';
+import { object } from 'prop-types';
+import { renderRoutes } from 'funsee/utils';
 
 import Layout from '../../components/layout';
 
-const App = fn => ({ route }) => (
+const App = ({ route }) => (
   <div>
     <Layout>
       {/* child routes won't render without this */}
-      {fn(route.routes)}
+      {renderRoutes(route.routes)}
     </Layout>
   </div>
 );
 
 
 App.propTypes = {
-  route: object.isRequired,
-  fn: func.isRequired
+  route: object.isRequired
 };
 
 App.defaultProps = {
-  route: {},
-  fn: () => {}
+  route: {}
 };
 
 export default App;
