@@ -20,7 +20,6 @@ class Module1 extends C {
 
   render() {
     const { props } = this;
-    console.log(props);
     return (
       <div>
         hellow 1112223

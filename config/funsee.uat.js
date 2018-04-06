@@ -1,3 +1,5 @@
+
+const path = require('path');
 /**
  * ------------------------------------------------------------------
  * port<number>: node启动端口号
@@ -23,5 +25,8 @@ module.exports = {
   customMiddleware: [{
     name: 'test',
     sort: '2300'
-  }]
+  }],
+  log: {
+    silly: path.resolve(__dirname, '../logs/test.log')
+  }
 };
