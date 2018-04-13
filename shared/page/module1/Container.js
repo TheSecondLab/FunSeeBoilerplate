@@ -4,6 +4,12 @@ import * as actions from './action';
 import * as commonAction from '../../common/action';
 import * as style from './style.scss';
 
+@connect(state => ({
+  test: state.module.module1.zxText
+}), {
+  zxTest: actions.zxAction,
+  loadEnv: commonAction.loadEnv
+})
 class Module1 extends C {
   static pageInit() {
     return () => actions.zxAction(123);
@@ -32,9 +38,4 @@ class Module1 extends C {
 }
 Module1.pageTitle = '测试页面';
 
-export default connect(state => ({
-  test: state.module.module1.zxText
-}), {
-  zxTest: actions.zxAction,
-  loadEnv: commonAction.loadEnv
-})(Module1);
+export default (Module1);
