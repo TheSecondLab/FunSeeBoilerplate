@@ -3,6 +3,7 @@ import connect from 'funsee/connect';
 import * as actions from './action';
 import * as commonAction from '../../common/action';
 import * as style from './style.scss';
+import avatar from './avatar.png';
 
 @connect(state => ({
   test: state.module.module1.zxText
@@ -28,6 +29,7 @@ class Module1 extends C {
     const { props } = this;
     return (
       <div>
+        <img src={avatar} alt='' />
         hellow 1112223
         <div className={style.great} onClick={this.onclick.bind(this)}>
           {props.test}
